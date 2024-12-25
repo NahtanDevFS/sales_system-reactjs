@@ -1,0 +1,34 @@
+.header {
+    background-color: #181d28;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    font-size: 32px;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.icon-header {
+    width: 32px;
+    height: 32px;
+    filter: invert(1) brightness(2);
+    margin-left: 10px;
+}
+
+.icon-header-colored {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}

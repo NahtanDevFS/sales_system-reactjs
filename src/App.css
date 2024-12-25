@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row; /* Align items horizontally */
+  width: 100%;
+}
+
+.content-container {
+  flex-grow: 1; /* Allow content to take up remaining space */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
