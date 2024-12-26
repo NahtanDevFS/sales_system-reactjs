@@ -3,7 +3,8 @@ import './App.css';
 import { Route, BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
 import NavBar from "./Components/Lateral_bar/NavBar";
 import Component_login from "./Components/Login/Component_login";
-import Home from "./Components/Views/Home";
+import Home from "./Components/Views/Home/Home";
+import Clients from "./Components/Views/Clients/Clients";
 import Header from './Components/Header/Header';
 function App() {
   const location = useLocation();
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Component_login />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/clients" element={<Clients />} />
           </Routes>
         </div>
       </div>

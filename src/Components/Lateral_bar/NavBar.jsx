@@ -10,23 +10,37 @@ import { Link, useNavigate } from 'react-router-dom';
 const pages = [{
   name: "Home",
   href: "/home",
+},
+{
+  name: "Clients",
+  href: "/clients",
 },];
+
+
 
 
 export default function NavBar() {
 
   const navigate = useNavigate();
 
+  const onHomeButtonClick = () => {
+    navigate('/home');
+  }
+
+  const onClientsButtonClick = () => {
+    navigate('/clients');
+  }
+
   return (
     <div className='navbar'>
       <div className='lateral-bar'>
           <div className='lateral-bar-container'>
             <div className='lateral-bar-item'>
-            <img className='icon' src={home} alt="" />
-            <img className='icon' src={clients} alt="" />
-            <img className='icon' src={sells} alt="" />
-            <img className='icon' src={stock} alt="" />
-            <img className='icon' src={settings} alt="" />
+            <img className='icon-nav' onClick={onHomeButtonClick} src={home} alt="" />
+            <img className='icon-nav' onClick={onClientsButtonClick} src={clients} alt="" />
+            <img className='icon-nav' src={sells} alt="" />
+            <img className='icon-nav' src={stock} alt="" />
+            <img className='icon-nav' src={settings} alt="" />
             </div>
           </div>
       </div>
