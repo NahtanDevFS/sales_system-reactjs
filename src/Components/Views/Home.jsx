@@ -3,7 +3,7 @@ import './Home.css';
 
 export default function Home() {
 
-    let name = 'Name';
+    let name = 'Generic_name';
 
   return (
     <div className='home-container'>
